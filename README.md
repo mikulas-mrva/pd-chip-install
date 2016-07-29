@@ -1,7 +1,7 @@
-## pd-chip-install
+# pd-chip-install
 Installation instructions for my C.H.I.P. intended to run pure data
 
-# As a root
+## As root
 
 `adduser mikulas`
 
@@ -22,7 +22,7 @@ connect to wifi
 
 `exit`
 
-# As mikulas
+## As mikulas
 
 `sudo apt-get update`
 
@@ -41,7 +41,7 @@ to install 'add-apt-repository'
 `sudo apt-get install ap-hotspot`
 
 
-# install PD-L20rk
+## install PD-L20rk
 
 [http://l2ork.music.vt.edu/main/make-your-own-l2ork/software/raspberry-pi/]
 
