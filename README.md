@@ -58,5 +58,8 @@ to install 'add-apt-repository'
 
 ## RUN PD
 
-`pd -alsa -nogui -audiooutdev "3,4" test_sine_165.pd`
+`pd -alsa -nogui -audiooutdev "4" -audioindev "3" ./test_in_feedback.pd`
 
+`pd -r 48000 -nogui -audiooutdev "4" -audioindev "4" ./test_in_feedback.pd`
+
+`pd -r 48000 -nogui -audiooutdev "4" -audioindev "4" ./test_in_feedback.pd & alsamixer`
