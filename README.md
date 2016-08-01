@@ -40,6 +40,9 @@ to install 'add-apt-repository'
 
 `sudo apt-get install ap-hotspot`
 
+## test sound
+
+`aplay /usr/share/sounds/alsa/Side_Right.wav`
 
 ## install PD-L20rk
 
@@ -52,3 +55,8 @@ to install 'add-apt-repository'
 `sudo apt-get update`
 
 `sudo apt-get -f install`
+
+## RUN PD
+
+`pd -alsa -nogui -audiooutdev "3,4" test_sine_165.pd`
+
