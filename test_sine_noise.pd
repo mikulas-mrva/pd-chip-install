@@ -6,6 +6,9 @@
 #X obj 157 93 osc~ 1760;
 #X obj 139 70 osc~ 3520;
 #X obj 181 199 clip~ -0.5 0.5;
+#X obj 54 113 loadbang;
+#X obj 54 136 delay 100;
+#X msg 54 160 \; pd dsp 1;
 #X connect 1 0 6 0;
 #X connect 2 0 6 0;
 #X connect 3 0 6 0;
@@ -13,3 +16,5 @@
 #X connect 5 0 6 0;
 #X connect 6 0 0 0;
 #X connect 6 0 0 1;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
