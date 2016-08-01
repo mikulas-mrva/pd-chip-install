@@ -55,3 +55,8 @@ to install 'add-apt-repository'
 `sudo apt-get update`
 
 `sudo apt-get -f install`
+
+## RUN PD
+
+`pd -alsa -nogui -audiooutdev "3,4" test_sine_165.pd`
+
