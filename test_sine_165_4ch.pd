@@ -2,8 +2,13 @@
 #X obj 181 199 clip~ -1 1;
 #X obj 181 165 osc~ 165;
 #X obj 177 235 dac~ 1 2 3 4;
+#X obj 103 164 loadbang;
+#X obj 103 187 delay 100;
+#X msg 103 211 \; pd dsp 1;
 #X connect 0 0 2 0;
 #X connect 0 0 2 1;
 #X connect 0 0 2 2;
 #X connect 0 0 2 3;
 #X connect 1 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
